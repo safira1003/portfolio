@@ -11,7 +11,7 @@ function App() {
   }
 
   return (
-    <div className="bg-black min-h-screen px-24 relative">
+    <div className="bg-black min-h-screen px-[10%] relative">
       <Header onClick={handleTabClick} activeTab={activeTab}/>
       <main>
         <About/>

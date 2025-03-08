@@ -1,9 +1,15 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
+import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
+import { faFile } from '@fortawesome/free-regular-svg-icons';
+
 import ProfilePict from "../assets/safira.png";
 import TechComponent from "./template/TechComponent";
+import PrimaryButton from './template/PrimaryButton';
 
 export default function About() {
     return (
-        <section className="flex flex-col min-h-screen pt-48">
+        <section className="flex flex-col min-h-screen pt-[15%]">
             <div className="flex items-center gap-8 text-white overflow-visible">
                 <div className="flex flex-col gap-3 basis-2/3  font-fira-mono font-bold">
                     <p className=" text-4xl">
@@ -31,7 +37,24 @@ export default function About() {
                     </div>
                 </div>
             </div>
-            <div></div>
+            <div className="text-white flex gap-8 items-center justify-center px-[10%] py-[8%]">
+                <p className="flex items-center text-base font-light font-fira-mono gap-3 animate-bounce">
+                    Scroll Down
+                    <FontAwesomeIcon className='text-xl' icon={faArrowDown} />
+                </p>
+                <div className="flex gap-4">
+                    <PrimaryButton>
+                        <FontAwesomeIcon className='text-xl' icon={faGithub} />
+                    </PrimaryButton>
+                    <PrimaryButton>
+                        <FontAwesomeIcon className='text-xl' icon={faLinkedinIn} />
+                    </PrimaryButton>
+                    <PrimaryButton>
+                        <p className='text-sm font-medium font-fira-mono'>Download Resume</p>
+                        <FontAwesomeIcon className='text-xl' icon={faFile} />
+                    </PrimaryButton>
+                </div>
+            </div>
         </section>
     )
 }
