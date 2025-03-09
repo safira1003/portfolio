@@ -4,7 +4,7 @@ import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import { faFile } from '@fortawesome/free-regular-svg-icons';
 
 import ProfilePict from "../assets/safira.png";
-import TechComponent from "./template/TechComponent";
+import TechComponentAbsolute from "./template/TechComponentAbsolute";
 import PrimaryButton from './template/PrimaryButton';
 import SectionTemp from './template/SectionTemp';
 
@@ -12,13 +12,13 @@ export default function About() {
     return (
         <>
             <section className="flex flex-col min-h-screen pt-[15%]">
-                <div className="flex items-center gap-8 text-white overflow-visible">
+                <div className="flex items-center gap-10 text-white overflow-visible">
                     <div className="flex flex-col gap-3 basis-2/3  font-fira-mono font-bold">
                         <p className=" text-4xl">
                             Hi, I’m <span className="">Safira Isma Aulia</span>
                         </p>
                         <p className="text-5xl">
-                            A Junior Web Developer
+                            A Web Developer
                         </p>
                     </div>
 
@@ -29,13 +29,13 @@ export default function About() {
                                 alt="Safira Isma Aulia"
                                 className="w-62 h-62 rounded-full transition-transform duration-500 group-hover:scale-105"
                             />
-                            <TechComponent name={"Tailwind CSS"} topPosition={220} leftPosition={-10} />
-                            <TechComponent name={"Javascript"} topPosition={130} leftPosition={-40} />
-                            <TechComponent name={"NextJS"} topPosition={40} leftPosition={5} />
+                            <TechComponentAbsolute name={"Tailwind CSS"} topPosition={220} leftPosition={-10} />
+                            <TechComponentAbsolute name={"Javascript"} topPosition={130} leftPosition={-40} />
+                            <TechComponentAbsolute name={"NextJS"} topPosition={40} leftPosition={5} />
 
-                            <TechComponent name={"Bootstrap"} topPosition={165} leftPosition={250} />
-                            <TechComponent name={"NodeJS"} topPosition={-10} leftPosition={250} />
-                            <TechComponent name={"React"} topPosition={70} leftPosition={280} />
+                            <TechComponentAbsolute name={"Bootstrap"} topPosition={165} leftPosition={250} />
+                            <TechComponentAbsolute name={"NodeJS"} topPosition={-10} leftPosition={250} />
+                            <TechComponentAbsolute name={"React"} topPosition={70} leftPosition={280} />
                         </div>
                     </div>
                 </div>
