@@ -19,6 +19,9 @@ const iconPaths = {
     "Figma": () => import("../assets/icon/figma.svg"),
     "Google Cloud": () => import("../assets/icon/google-cloud.svg"),
     "Vercel": () => import("../assets/icon/vercel.svg"),
+    "PostgreSQL": () => import("../assets/icon/postgree.svg"),
+    "Laravel": () => import("../assets/icon/laravel.svg"),
+    "PHP": () => import("../assets/icon/php.svg"),
 };
 
 // Function to dynamically import the icon based on the name
