@@ -43,7 +43,7 @@ export default function Experience() {
                     {experiences.map((exp, index) => (
                         <div key={index} className="flex flex-col items-center gap-4 relative">
                             <div className="w-6 h-6 bg-yellow-300 rounded-full z-10"></div>
-                            <div className="flex flex-col gap-8 bg-white shadow-md p-8 rounded-2xl max-w-5xl w-full text-left">
+                            <div className="flex flex-col gap-8 bg-white shadow-md p-8 rounded-2xl w-full text-left">
                                 <div className="flex justify-between items-center">
                                     <div>
                                         <h2 className="text-2xl text-black font-medium">{exp.title}</h2>
@@ -57,7 +57,7 @@ export default function Experience() {
                                         <img src={exp.logoSrc} alt={exp.company} className="object-contain bg-white h-15 p-2 rounded-full border-2 border-black" />
                                     </div>
                                 </div>
-                                <ul className="list-disc list-inside">
+                                <ul className="list-disc list-outside ms-5">
                                     {exp.description.map((des, index) => {
                                         return (
                                             <li key={index} className="text-gray-700">{des}</li>
