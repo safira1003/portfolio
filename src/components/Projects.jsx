@@ -35,13 +35,16 @@ export default function Projects() {
                         <h2 className="text-3xl font-semibold mb-4">{type}</h2>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                             {projects.map((project) => (
-                                <div key={project.title} className="flex flex-col bg-white rounded-lg shadow-lg overflow-hidden">
+                                <div key={project.title} className="flex flex-col relative bg-white rounded-lg shadow-lg overflow-hidden group">
+                                    <button className='absolute top-3 right-3 h-10 w-10 text-center text-xl rounded-full cursor-pointer hover:bg-white hover:text-black shadow-xl border-b-2 border-white bg-black shadow-black group-hover:animate-wiggle '
+                                        onClick={() => openModal(project)}><FontAwesomeIcon icon={faInfo} />
+                                    </button>
                                     <img src={project.images[0]} alt={project.title} className="w-full min-h-64 object-cover border-black shadow-lg shadow-black-50/2" />
                                     <div className="h-full flex flex-col justify-between gap-3 p-4">
                                         <div>
                                             <div className='flex justify-between'>
                                                 <h3 className="text-black text-2xl font-bold w-3/4">{project.title}</h3>
-                                                <button className='bg-black h-7 w-7 text-center text-lg rounded-full cursor-pointer hover:bg-stone-700 ' onClick={() => openModal(project)}><FontAwesomeIcon icon={faInfo} /></button>
+
                                             </div>
                                             <div className="flex flex-wrap gap-2">
                                                 {project.skills.map((skill, index) => (
