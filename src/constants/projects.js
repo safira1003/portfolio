@@ -1,7 +1,7 @@
 
 const images = import.meta.glob("../assets/project-img/*.png", { eager: true });
 
-const projects = [
+const PROJECTS = [
     {
         title: "Sengkuni (Sistem Kelembagaan Terintegrasi)",
         type: "Work/Internship Project",
@@ -85,4 +85,4 @@ const projects = [
     },
 ];
 
-export default projects;
+export default PROJECTS;

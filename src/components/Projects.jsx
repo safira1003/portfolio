@@ -7,9 +7,9 @@ import SectionTemp from "./template/SectionTemp";
 import TechComponentSmall from "./template/TechComponentSmall";
 import Modal from "./template/Modal";
 
-import projects from "../constants/projects";
+import PROJECTS from "../constants/projects";
 
-const groupedProjects = projects.reduce((acc, project) => {
+const groupedProjects = PROJECTS.reduce((acc, project) => {
     acc[project.type] = acc[project.type] || [];
     acc[project.type].push(project);
     return acc;
@@ -28,7 +28,7 @@ export default function Projects() {
 
     return (
         <SectionTemp>
-            <div className="flex flex-col gap-12 w-full text-center">
+            <div className="flex flex-col gap-15 w-full text-center">
                 <h1 className="text-5xl font-bold">Projects I’ve Worked on</h1>
                 {Object.entries(groupedProjects).map(([type, projects]) => (
                     <div key={type} className="text-left flex flex-col gap-1">

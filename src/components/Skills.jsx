@@ -1,15 +1,8 @@
 import SectionTemp from "./template/SectionTemp";
 import TechComponent from "./template/TechComponent";
 
-const techStack = [
-    "HTML", "CSS", "Javascript", "React", "NextJS",
-    "Tailwind CSS", "Bootstrap", "NodeJS", "Express",
-    "REST.API", "MySQL", "Python", "C++", "Git",
-];
-
-const toolStack = [
-    "Github", "Visual Studio Code", "Postman", "Figma", "Notion", "Google Cloud", "Vercel"
-];
+import TECHSTACK from "../constants/techStack";
+import TOOLSTACK from "../constants/toolStack";
 
 export default function Skills() {
     return (
@@ -19,7 +12,7 @@ export default function Skills() {
                 <div className="flex flex-col gap-8">
                     <h2 className="text-3xl font-semibold">Languages & Frameworks I Use</h2>
                     <div className="flex flex-wrap gap-3 justify-center px-[5%] ">
-                        {techStack.map((tech) => (
+                        {TECHSTACK.map((tech) => (
                             <TechComponent key={tech} name={tech} />
                         ))}
                     </div>
@@ -27,7 +20,7 @@ export default function Skills() {
                 <div className="flex flex-col gap-8">
                     <h2 className="text-3xl font-semibold">Development & Productivity Tools I Use</h2>
                     <div className="flex flex-wrap gap-3 justify-center px-[5%] ">
-                        {toolStack.map((tool) => (
+                        {TOOLSTACK.map((tool) => (
                             <TechComponent key={tool} name={tool} />
                         ))}
                     </div>
