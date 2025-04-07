@@ -10,17 +10,17 @@ const Modal = forwardRef(function Modal({ children }, ref) {
     useImperativeHandle(ref, () => ({
         open() {
             dialog.current.showModal();
-            document.body.style.overflow = "hidden"; // Mencegah scroll background
+            document.body.style.overflow = "hidden"; 
         },
         close() {
             dialog.current.close();
-            document.body.style.overflow = ""; // Mengembalikan scroll setelah modal ditutup
+            document.body.style.overflow = ""; 
         }
     }));
 
     useEffect(() => {
         const handleClose = () => {
-            document.body.style.overflow = ""; // Pastikan scroll kembali aktif saat modal tertutup
+            document.body.style.overflow = ""; 
         };
         const modalElement = dialog.current;
         if (modalElement) {
@@ -36,7 +36,7 @@ const Modal = forwardRef(function Modal({ children }, ref) {
     const handleBackdropClick = (event) => {
         if (event.target === dialog.current) {
             dialog.current.close();
-            document.body.style.overflow = ""; // Aktifkan scroll kembali
+            document.body.style.overflow = ""; 
         }
     };
 
@@ -44,10 +44,10 @@ const Modal = forwardRef(function Modal({ children }, ref) {
         <dialog
             ref={dialog}
             onClick={handleBackdropClick}
-            className="rounded-xl py-4 pb-8 px-[1%] backdrop:cursor-pointer backdrop:bg-stone-900/95 w-2/3 h-[80%] my-auto mx-auto cursor-default"
+            className="rounded-xl  py-[1%] md:py-4 pb-8 px-[1%] backdrop:cursor-pointer backdrop:bg-stone-900/95 w-4/5 md:w-2/3 max-h-[90%] md:max-h-[80%] my-auto mx-auto cursor-default"
         >
             <form method="dialog" className="flex justify-end">
-                <button className="text-black p-1 text-2xl font-bold cursor-pointer hover:text-stone-600">
+                <button className="text-black p-1 text-xl md:text-2xl font-bold cursor-pointer hover:text-stone-600">
                     <FontAwesomeIcon icon={faClose} />
                 </button>
             </form>

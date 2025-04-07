@@ -6,8 +6,8 @@ export default function Footer() {
     return (
         <>
             <div className="border-1 border-stone-200 w-full mx-auto"></div>
-            <footer className="flex justify-between items-center w-full py-6 bg-black text-white text-center font-fira-sans">
-                <p className="text-sm opacity-75">
+            <footer className="flex flex-col-reverse md:flex-row gap-3 justify-between items-center w-full py-6 bg-black text-white text-center font-fira-sans">
+                <p className="text-xs md:text-sm opacity-75">
                     &copy; {new Date().getFullYear()} Built by SafiraIA.
                 </p>
 

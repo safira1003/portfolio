@@ -17,7 +17,7 @@ const EXPERIENCES = [
     },
     {
         title: "Cloud Computing Cohort",
-        company: "Bangkit Academy by Google, GOTO, & Tokopedia",
+        company: "Bangkit Academy 2023",
         logoSrc: bangkitLogo,
         location: "Online",
         date: "Aug 2023 - Jan 2024",
