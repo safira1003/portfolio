@@ -1,27 +1,41 @@
+import { useState } from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 
-const HEADER = ["about", "skills", "experience", "education", "projects", "contact"]
+const HEADER = ["about", "skills", "experience", "education", "projects", "contact"];
 
 export default function Header({ onClick, activeTab }) {
-    const header = HEADER;
+    const [isOpen, setIsOpen] = useState(false);
 
-    const activeStyle = "uppercase py-3 px-4 text-black transition-colors duration-800 cursor-pointer bg-white rounded-full ";
-    const inactiveStyle = "uppercase py-3 px-4 text-white transition-colors duration-800 cursor-pointer rounded-full ";
+    const toggleMenu = () => setIsOpen(!isOpen);
+
+    const activeStyle = "uppercase py-2 px-4 text-black bg-white rounded-full";
+    const inactiveStyle = "uppercase py-2 px-4 text-white hover:bg-white hover:text-black transition-colors rounded-full";
 
     return (
-        <header className="px-[25%] py-8 font-fira-sans text-sm fixed top-0 right-0 left-0  z-50">
-            <nav className="flex justify-between backdrop-blur-2xl rounded-full " >
-                {header.map((item, index) => {
-                    return (
+        <header className="px-4 py-4 font-fira-sans text-sm fixed top-0 left-0 right-0 z-50 backdrop-blur-2xl">
+            <div className="flex justify-between items-center">
+                <div className="text-white font-bold text-2xl font-fira-mono">Portfolio</div>
+
+                <button onClick={toggleMenu} className="text-white text-2xl lg:hidden">
+                    <FontAwesomeIcon icon={isOpen ? faTimes : faBars} />
+                </button>
+
+                <nav className={`lg:flex ${isOpen ? "flex" : "hidden"} flex-col lg:flex-row gap-2 lg:gap-4 bg-black lg:bg-transparent absolute lg:static top-full left-0 right-0 p-4 lg:p-0`}>
+                    {HEADER.map((item, index) => (
                         <button
                             key={index}
                             className={activeTab === item ? activeStyle : inactiveStyle}
-                            onClick={()=>onClick(item)}
+                            onClick={() => {
+                                onClick(item);
+                                setIsOpen(false);
+                            }}
                         >
                             {item}
                         </button>
-                    );
-                })}
-            </nav>
+                    ))}
+                </nav>
+            </div>
         </header>
-    )
+    );
 }

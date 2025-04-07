@@ -16,10 +16,10 @@ export default function About() {
             <section className="flex flex-col gap-20 md:gap-10 justify-center min-h-screen pt-[15%]">
                 <div className="flex flex-col md:flex-row items-center gap-20 md:gap-10 text-white overflow-visible">
                     <div className="flex flex-col gap-3 basis-2/3 font-fira-mono font-bold text-center md:text-start">
-                        <p className="text-xl md:text-4xl">
+                        <p className="text-xl lg:text-4xl">
                             Hi, I’m <span className="">Safira Isma Aulia</span>
                         </p>
-                        <p className="text-4xl md:text-5xl">
+                        <p className="text-4xl lg:text-5xl">
                             Web Development Enthusiast
                         </p>
                     </div>
