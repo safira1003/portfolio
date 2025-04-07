@@ -4,7 +4,7 @@ import EDUCATIONS from "../constants/educations";
 
 export default function Education() {
     return (
-        <SectionTemp>
+        <SectionTemp id="education">
             <div className="flex flex-col gap-12 w-full text-center">
                 <h1 className="text-5xl font-bold">Education</h1>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

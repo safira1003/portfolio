@@ -6,7 +6,7 @@ import TOOLSTACK from "../constants/toolStack";
 
 export default function Skills() {
     return (
-        <SectionTemp>
+        <SectionTemp id="skills">
             <div className="flex flex-col gap-12 w-full text-center">
                 <h1 className="text-5xl font-bold">Skills</h1>
                 <div className="flex flex-col gap-8">

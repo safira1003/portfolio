@@ -27,7 +27,7 @@ export default function Projects() {
 
 
     return (
-        <SectionTemp>
+        <SectionTemp id="projects">
             <div className="flex flex-col gap-15 w-full text-center">
                 <h1 className="text-5xl font-bold">Projects I’ve Worked on</h1>
                 {Object.entries(groupedProjects).map(([type, projects]) => (

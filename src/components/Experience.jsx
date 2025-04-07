@@ -5,7 +5,7 @@ import experiences from "../constants/experiences";
 
 export default function Experience() {
     return (
-        <SectionTemp>
+        <SectionTemp id="experience">
             <div className="flex flex-col gap-12 w-full text-center">
                 <h1 className="text-5xl font-bold">Experience</h1>
                 <div className="relative flex flex-col gap-12">

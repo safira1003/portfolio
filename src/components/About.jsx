@@ -3,6 +3,8 @@ import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import { faFile } from '@fortawesome/free-regular-svg-icons';
 
+import resumeFile from "../assets/pdf/SafiraIA_Resume.pdf";
+
 import ProfilePict from "../assets/safira.png";
 import TechComponentAbsolute from "./template/TechComponentAbsolute";
 import PrimaryButton from './template/PrimaryButton';
@@ -45,20 +47,20 @@ export default function About() {
                         <FontAwesomeIcon className='text-xl' icon={faArrowDown} />
                     </p>
                     <div className="flex gap-4">
-                        <PrimaryButton>
+                        <PrimaryButton link="https://github.com/safira1003">
                             <FontAwesomeIcon className='text-xl' icon={faGithub} />
                         </PrimaryButton>
-                        <PrimaryButton>
+                        <PrimaryButton link="https://www.linkedin.com/in/safira-isma-aulia/">
                             <FontAwesomeIcon className='text-xl' icon={faLinkedinIn} />
                         </PrimaryButton>
-                        <PrimaryButton>
+                        <PrimaryButton link={resumeFile}>
                             <p className='text-sm font-medium font-fira-mono'>Download Resume</p>
                             <FontAwesomeIcon className='text-xl' icon={faFile} />
                         </PrimaryButton>
                     </div>
                 </div>
             </section>
-            <SectionTemp>
+            <SectionTemp id='about' >
                 <div className='flex gap-5 items-start justify-center'>
                     <h1 className='basis-1/3 text-center font-bold text-5xl'>
                         About Me
