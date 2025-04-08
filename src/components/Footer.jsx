@@ -12,7 +12,7 @@ export default function Footer() {
                 </p>
 
                 <div className="mt-2 flex justify-center items-center gap-2">
-                    <span className="text-sm opacity-75">Portfolio Made With:</span>
+                    <span className="text-xs md:text-sm opacity-75">Portfolio Made With:</span>
                     {technologies.map((skill, index) => (
                         <TechComponentSmall key={index} name={skill} />
                     ))}

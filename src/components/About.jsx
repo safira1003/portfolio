@@ -20,7 +20,7 @@ export default function About({onClick}) {
                             Hi, I’m <span className="">Safira Isma Aulia</span>
                         </p>
                         <p className="text-4xl lg:text-5xl">
-                            Web Development Enthusiast
+                            Web Developer
                         </p>
                     </div>
 
