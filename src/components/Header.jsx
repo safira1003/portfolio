@@ -25,7 +25,7 @@ export default function Header({ onClick, activeTab }) {
                     {HEADER.map((item, index) => (
                         <button
                             key={index}
-                            className={activeTab === item ? activeStyle : inactiveStyle}
+                            className={ !isOpen && ( activeTab === item) ? activeStyle : inactiveStyle}
                             onClick={() => {
                                 onClick(item);
                                 setIsOpen(false);
