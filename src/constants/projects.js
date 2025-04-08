@@ -56,33 +56,33 @@ const PROJECTS = [
         source: "https://github.com/safira1003/garlicious",
         images: [ images["../assets/project-img/garlicious1.png"].default,]
     },
-    {
-        title: "Company Landing Page",
-        type: "Practice Project",
-        descs: ["Built a responsive static landing page using Bootstrap 5 as a practice project.", "Applied HTML, CSS, and JavaScript to create a functional layout while learning proper structuring and styling techniques.", "Used jQuery for basic interactivity and focused on making the design adapt well to different screen sizes.", "Practiced slicing mockups into a real webpage to improve front-end development skills."],
-        skills: ["HTML", "CSS", "Javascript", "Bootstrap"],
-        url: "https://safira1003.github.io/landing-page/",
-        source: "https://github.com/safira1003/landing-page",
-        images: [ images["../assets/project-img/landingpage1.png"].default, images["../assets/project-img/landingpage2.png"].default,]
-    },
-    {
-        title: "Drum Kit",
-        type: "Practice Project",
-        descs: ["Developed a web-based drum application to practice JavaScript DOM manipulation, enabling users to play multiple drum sounds through both mouse clicks and keyboard inputs.", "Implemented event listeners for real-time interaction and optimized audio playback for a responsive experience. "],
-        skills: ["HTML", "CSS", "Javascript"],
-        url: "https://safira1003.github.io/drum-kit/",
-        source: "https://github.com/safira1003/drum-kit",
-        images: [ images["../assets/project-img/drumkit1.png"].default,]
-    },
-    {
-        title: "Classic Simon Game",
-        type: "Practice Project",
-        descs: ["Developed a web-based Simon Game to practice memory-based game logic and JavaScript event handling.", "Implemented dynamic sequence generation and user interaction tracking to progressively increase difficulty.", "Utilized HTML, CSS, and JavaScript to create an interactive and visually engaging gameplay experience.", "Optimized event listeners for real-time responsiveness and ensured smooth animations for a seamless user experience."],
-        skills: ["HTML", "CSS", "Javascript"],
-        url: "https://safira1003.github.io/simon-game/",
-        source: "https://github.com/safira1003/simon-game",
-        images: [ images["../assets/project-img/simon1.png"].default,]
-    },
+    // {
+    //     title: "Company Landing Page",
+    //     type: "Practice Project",
+    //     descs: ["Built a responsive static landing page using Bootstrap 5 as a practice project.", "Applied HTML, CSS, and JavaScript to create a functional layout while learning proper structuring and styling techniques.", "Used jQuery for basic interactivity and focused on making the design adapt well to different screen sizes.", "Practiced slicing mockups into a real webpage to improve front-end development skills."],
+    //     skills: ["HTML", "CSS", "Javascript", "Bootstrap"],
+    //     url: "https://safira1003.github.io/landing-page/",
+    //     source: "https://github.com/safira1003/landing-page",
+    //     images: [ images["../assets/project-img/landingpage1.png"].default, images["../assets/project-img/landingpage2.png"].default,]
+    // },
+    // {
+    //     title: "Drum Kit",
+    //     type: "Practice Project",
+    //     descs: ["Developed a web-based drum application to practice JavaScript DOM manipulation, enabling users to play multiple drum sounds through both mouse clicks and keyboard inputs.", "Implemented event listeners for real-time interaction and optimized audio playback for a responsive experience. "],
+    //     skills: ["HTML", "CSS", "Javascript"],
+    //     url: "https://safira1003.github.io/drum-kit/",
+    //     source: "https://github.com/safira1003/drum-kit",
+    //     images: [ images["../assets/project-img/drumkit1.png"].default,]
+    // },
+    // {
+    //     title: "Classic Simon Game",
+    //     type: "Practice Project",
+    //     descs: ["Developed a web-based Simon Game to practice memory-based game logic and JavaScript event handling.", "Implemented dynamic sequence generation and user interaction tracking to progressively increase difficulty.", "Utilized HTML, CSS, and JavaScript to create an interactive and visually engaging gameplay experience.", "Optimized event listeners for real-time responsiveness and ensured smooth animations for a seamless user experience."],
+    //     skills: ["HTML", "CSS", "Javascript"],
+    //     url: "https://safira1003.github.io/simon-game/",
+    //     source: "https://github.com/safira1003/simon-game",
+    //     images: [ images["../assets/project-img/simon1.png"].default,]
+    // },
 ];
 
 export default PROJECTS;
