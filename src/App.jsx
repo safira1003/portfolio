@@ -60,7 +60,7 @@ function App() {
     <div className="bg-black min-h-screen px-[10%] relative cursor-default">
       <Header onClick={handleTabClick} activeTab={activeTab} />
       <main>
-        <About />
+        <About onClick={handleTabClick}/>
         <Skills />
         <Experience />
         <Education />

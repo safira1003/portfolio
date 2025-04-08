@@ -1,8 +1,11 @@
 
 
-export default function PrimaryButton({ link, children }) {
+export default function PrimaryButton({ link, children, onClick = null }) {
     return (
         <a
+            onClick={() => {
+                onClick("contact");
+            }}
             href={link}
             target="_blank"
             rel="noopener noreferrer"

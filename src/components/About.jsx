@@ -10,7 +10,7 @@ import TechComponentAbsolute from "./template/TechComponentAbsolute";
 import PrimaryButton from './template/PrimaryButton';
 import SectionTemp from './template/SectionTemp';
 
-export default function About() {
+export default function About({onClick}) {
     return (
         <>
             <section className="flex flex-col gap-20 md:gap-10 justify-center min-h-screen pt-[15%]">
@@ -75,7 +75,7 @@ export default function About() {
                             Actively seeking opportunities in the web development field, I am eager to contribute, grow, and deliver
                             high-quality work with dedication and commitment.
                         </p>
-                        <PrimaryButton>
+                        <PrimaryButton onClick={onClick}> 
                             <p className='text-base md:text-lg font-medium'>Contact Me</p>
                         </PrimaryButton>
                     </div>
