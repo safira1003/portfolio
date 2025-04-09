@@ -9,8 +9,8 @@ export default function Header({ onClick, activeTab }) {
 
     const toggleMenu = () => setIsOpen(!isOpen);
 
-    const activeStyle = "uppercase py-2 px-4 text-black bg-white rounded-full";
-    const inactiveStyle = "uppercase py-2 px-4 text-white hover:bg-white hover:text-black transition-colors rounded-full";
+    const activeStyle = "cursor-pointer uppercase py-2 px-4 text-black bg-white rounded-full";
+    const inactiveStyle = "cursor-pointer uppercase py-2 px-4 text-white hover:bg-white hover:text-black transition-colors rounded-full";
 
     return (
         <header className="px-4 py-4 font-fira-sans text-sm fixed top-0 left-0 right-0 z-50 backdrop-blur-2xl">
